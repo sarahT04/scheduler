@@ -1,5 +1,6 @@
 import json
 
+
 class Scheduler:
 
     def __init__(self, filename):
@@ -16,6 +17,14 @@ class Scheduler:
         self.today_schedules = []
         self.today_time = []
         self.today_schedule_dict = {}
+
+    def save(self) -> None:
+        """
+        Saves to the JSON file
+        """
+        with open(self.filename, 'w') as f:
+            json.dump(self.file, f)
+
 
     def refresh(self) -> None:
         """
@@ -90,8 +99,7 @@ class Scheduler:
                 count += 1
         if count:
             print(f"Succesfully updated {count} schedule.")
-        with open(self.filename, 'w') as f:
-            json.dump(self.file, f)
+        self.save()
 
     def delete(self, day: str, time: str, schedule=None) -> None:
         """
@@ -129,5 +137,4 @@ class Scheduler:
             if not self.file[day]["schedule"][time]:
                 del self.file[day]["schedule"][time]
         # Saves it.
-        with open(self.filename, 'w') as f:
-            json.dump(self.file, f)
+        self.save()
