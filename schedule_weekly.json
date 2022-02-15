@@ -1,1 +1,1 @@
-{"Daily": {"schedule": {}}, "Mon": {"schedule": {}}, "Tues": {"schedule": {}}, "Wed": {"schedule": {}}, "Thurs": {"schedule": {}}, "Fri": {"schedule": {}}, "Sat": {"schedule": {}}, "Sun": {"schedule": {}}}
+{"Daily": {"schedule": {}}, "Mon": {"schedule": {}}, "Tues": {"schedule": {}}, "Wed": {"schedule": {"17:00": ["Eat chocolate", "have fun", "eat cereal"], "20:00": ["Finish Gravity Falls"]}}, "Thurs": {"schedule": {}}, "Fri": {"schedule": {}}, "Sat": {"schedule": {}}, "Sun": {"schedule": {}}}

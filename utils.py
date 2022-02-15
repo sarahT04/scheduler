@@ -18,7 +18,7 @@ def return_UC(arg=''):
 # User command errors and stuffs
 def check_UI(UI: list):
     command = UI[0]
-    command_list = ['add', 'insert', 'delete', 'see', 'daily', 'today']
+    command_list = ['add', 'insert', 'delete', 'see', 'daily', 'today', 'del']
     if command not in command_list:
         return print("Unknown command.")
     if command == 'today' or command == 'daily':
